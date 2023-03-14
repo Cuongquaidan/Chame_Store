@@ -1,0 +1,387 @@
+/* Comman */
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.content
+{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: #f9f9f9;
+    padding: 10px 20px 10px 10px;
+
+}
+i{
+    color: #f9f9f9;
+}
+.menu{
+    cursor: pointer;
+}
+.row{
+    padding: 15px 0px;
+    display: flex!important;
+}
+.bx{
+    padding-left: 5px ;
+}
+/* header */
+.header
+{
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(95, 94, 107);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.header__logo{
+    overflow: hidden;
+}
+.header__logo img
+{
+    height: 70px;
+    width: auto;
+}
+.header .content{
+    display: flex;
+    width: 1140px   ;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav .menu > li{
+    position: relative;
+    padding: 32px 10px;
+}
+.menu  li:hover .hover-color{
+    color: #EE4266;
+}
+.menu  :hover .hover-color{
+    color: #EE4266;
+}
+.header__nav .menu > li:hover .sub-menu{
+    display: block;
+}
+.header__nav .sub-menu{
+    display: none;
+    border-top: 2px solid #EE4266;
+    position: absolute;
+    top: 77px;
+    width: 300px;
+    background-color: #222;
+    
+}
+.sub-menu a{
+    font-size: 16px;
+    padding: 9px 20px;
+    color: #f9f9f9;
+}
+.sub-menu li:hover{
+    background-color: #f9f9f9;
+    color: #222;
+}
+.sub-menu li:hover a{
+    color: #222;
+}
+.header__active  ul:first-child,.header__nav  ul:first-child,.header__nav {
+    display: flex;
+    align-items: center;
+}
+.header__nav li{
+    padding: 10px 5px;
+
+}
+.supper-menu{
+    position: static !important;
+}
+.supper-menu:hover .other-menu{
+    visibility: visible;
+}
+
+.other-menu
+{
+    visibility: hidden;
+    position: absolute;
+    width: 100%!important;
+    left: 0!important;
+}
+
+.other-menu h2,p{
+    padding: 7px 10px;
+}
+.other-menu p:hover a{
+    color: #EE4266;
+}
+.other-menu h2:hover a{
+    color: #EE4266;
+}
+.header__active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.active__opacity{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.8;
+    padding: 10px 10px;
+    margin: 0;
+}
+.header__active a{
+    padding: 0;
+}
+.active__opacity:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.header__active .nofi-main{
+    position: relative;
+}
+.nofi{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 5px;
+    color: #f9f9f9;
+    background-color: #EE4266;
+}
+.bx-search:hover{
+    opacity: 1 ;
+    transform: scale(1);
+}
+.bx-search{
+    position: absolute;
+    outline: none;
+    border: none;
+    margin-left: -3px;
+    background-color: #f9f9f9;
+    color: #222;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+.search-input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 20px;
+    opacity: 1;
+    transition: all 0.5s ease ;
+}
+.search-box{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.search-box-open{
+    width: 250px;
+    opacity: 1;
+}
+.main__banner{
+    padding-top: 80px;
+}
+.banner__img{
+    height: calc(100vh-80px);
+    width: 100%;
+    object-fit: cover;
+}
+/* collection */
+.collection
+{
+    display: flex;
+    margin-top: 10px;
+    transition: 0.4s all ease;
+    overflow: hidden;
+}
+
+.collection a{
+    color: #222;
+}
+.summer__title,.camping__title,.travel__title,.ecotourism__title{
+    font-size: 21px;
+    padding: 0px 7px;
+}
+.summer__title:hover{
+    color: #EE4266;
+}
+.camping__title:hover{
+    color: #EE4266;
+}
+.travel__title:hover{
+    color: #EE4266;
+}
+.ecotourism__title:hover{
+    color: #EE4266;
+}
+.camping__img,.summer__img,.travel__img,.ecotuorism__img{
+    width: 690px;
+    height: 540px;
+    object-fit: cover;
+    padding: 5px;
+}
+.collection__camping,.collection__ecotourism,.collection__summer,.collection__travel{
+    padding: 0px 10px;
+}
+.slick-arrow{
+    visibility: hidden;
+}
+/* collection color */
+.collection__color{
+    display: flex;
+    flex: 1 0 25%;
+    flex-wrap: wrap;
+}
+.collection__color a{
+    padding: 0;
+}
+.collection__color img{
+    margin-bottom: 5px;
+}
+/* Hot collection */
+.collection__hot{
+    margin-top: 30px;
+}
+.collection a{
+    padding: 0;
+}
+.hot__title{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #797676;
+}   
+.desc{
+    text-align: center;
+    color: #797676;
+}
+.Hot_item{
+    margin-top: 30px;
+    display: flex;
+    flex: 1 0 25%;
+    flex-wrap: wrap;
+}
+.hot__sanpham{
+    display: flex;
+    width: 350px;
+    overflow: hidden;
+}
+.hot__sanpham a{
+    padding: 0;
+}
+.hinh__sanpham{
+    width: 350px;
+    height: 540px;
+    object-fit: cover;
+}
+.price{
+    margin-top: -10px;   
+    opacity: 0.8;
+    font-size: 13px;
+}
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-23px);
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+.slick-dots button{
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #e7abb8;
+}
+.slick-dots .slick-active button{
+    background-color: #EE4266;
+}
+.btn-aothun{
+    color: #f9f9f9;
+    background-color: #222;
+    line-height: 1.5;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+.btn-aothun:hover{
+    scale: 0.9;
+    opacity: 0.8;
+}
+.sanphamandprice a{
+    padding: 0;
+}
+.nonne img{
+    width: 350px;
+    height: 375px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+}
+.nonne img:hover{
+    transform: translateY(-40px);
+}
+/* cái dò */
+footer{
+    margin-top: 150px;
+    background-color: #222;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px 10px;
+}
+footer .logo{
+margin-top: 50px;
+}
+footer .phone-number{
+    font-weight: 900;
+}
+.moreinfo{
+    color: #00ffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.moreinfo i{
+    color: #00ffff;
+    font-size: 14px;
+}
+.moreinfo:hover i{
+    text-decoration: underline;
+}
+.moreinfo:hover{
+    text-decoration: underline;
+}
+footer .info{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.afterinfo{
+    padding: 100px;
+    line-height: 2;
+}
+.open-more{
+    height: 500px!important;
+}
